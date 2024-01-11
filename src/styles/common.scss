@@ -1,0 +1,18 @@
+@import './mixin.scss';
+@import './colorStyle.scss';
+@import './fontStyle.scss';
+@import './utils.scss';
+
+// 애니메이션
+@import './animiations.scss';
+
+.container {
+  overflow-y: hidden;
+}
+
+.layout-main {
+  width: 100%;
+}
+.layout-header {
+  width: 100%;
+}

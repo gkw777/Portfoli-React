@@ -24,6 +24,7 @@
     // "react/prefer-stateless-function": "off",
     // "react/jsx-one-expression-per-line": "off",
     // "no-undef": "off",
+    "jsx-a11y/iframe-has-title": "off",
     "no-return-assign": "off",
     "jsx-a11y/no-redundant-roles": "off",
     "react/button-has-type": "off",

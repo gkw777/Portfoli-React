@@ -1,0 +1,22 @@
+@keyframes slide-in {
+  from {
+    margin-left: -5%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+@keyframes slide-out {
+  from {
+    margin-left: 0%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 5%;
+    opacity: 1;
+  }
+}

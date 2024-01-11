@@ -84,6 +84,9 @@ const config = {
     new webpack.ProvidePlugin({
       React: 'react' // 리액트 자동 로드
     }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'src/assets/imgs', to: 'assets/imgs' }, { from: 'public/favicon.ico' }]
+    }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[id].[contenthash:8].css'

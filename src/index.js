@@ -6,7 +6,7 @@ import { RecoilRoot } from 'recoil';
 import Root from './app';
 
 import './index.css';
-import './styles/utils.scss';
+import './styles/common.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

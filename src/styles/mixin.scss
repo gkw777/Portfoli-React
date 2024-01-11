@@ -1,0 +1,24 @@
+@mixin kg-fs($val) {
+  font-size: $val;
+}
+@mixin kg-fw($val) {
+  font-weight: $val;
+}
+@mixin kg-lh($val) {
+  line-height: $val;
+}
+@mixin kg-dsplay($val) {
+  display: $val;
+}
+@mixin kg-flex-direction($val) {
+  flex-direction: $val;
+}
+@mixin kg-flex-wrap($val) {
+  flex-wrap: $val;
+}
+@mixin kg-justify-content($val) {
+  justify-content: $val;
+}
+@mixin kg-align-items($val) {
+  align-items: $val;
+}

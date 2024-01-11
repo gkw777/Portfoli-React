@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
+import Base from 'components/common/layouts/base';
+
 import Home from 'pages/landingPage/home';
 
 const Root = () => {
@@ -9,7 +11,9 @@ const Root = () => {
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/*' element={<Base />}>
+        <Route path='' element={<Home />} />
+      </Route>
     </Routes>
   );
 };
