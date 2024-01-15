@@ -4,8 +4,6 @@ import { css } from '@emotion/react';
 
 import classNames from 'classnames';
 
-import { imgPath } from 'constants/imagePath';
-
 import Main from 'components/common/layouts/main';
 import Section from 'components/common/layouts/section';
 
@@ -35,8 +33,8 @@ const Section1 = () => {
     <div className='section-1 position-relative'>
       <div className='slide-container'>
         <div className='slide-container-inner'>
-          <h1 className='slide-title fs-24 fw-900 lh-24'>푸른 물, 맑은 공기, 깨끗한 토양</h1>
-          <p className='slide-content fs-18 fw-400 lh-18'>세계로 나아가는 토탈환경전문기업</p>
+          <h1 className='slide-title fs-24 fw-900 lh-24'>푸른 물, 맑은 공기, 깨끗한 바다</h1>
+          <p className='slide-content fs-18 fw-400 lh-18'>세계로 나아가는 깨끗한 바다</p>
         </div>
       </div>
     </div>
@@ -51,12 +49,13 @@ const Section2 = () => {
           <div className='column'>
             <div className='column-image'>
               <a href='#a'>
-                <img src={imgPath.service01} alt='service 04' loading='lazy' />
+                <span className='material-icons'>swipe_vertical</span>
+                {/* <img src={imgPath.service01} alt='service 04' loading='lazy' /> */}
               </a>
             </div>
             <div className='column-content'>
               <a href='#a' className=' fs-14 fw-400 lh-20'>
-                토양/지하수
+                XX/XXX
               </a>
             </div>
           </div>
@@ -65,12 +64,13 @@ const Section2 = () => {
           <div className='column'>
             <div className='column-image'>
               <a href='#a'>
-                <img src={imgPath.service02} alt='service 04' loading='lazy' />
+                <span className='material-icons'>bolt</span>
+                {/* <img src={imgPath.service02} alt='service 04' loading='lazy' /> */}
               </a>
             </div>
             <div className='column-content'>
               <a href='#a' className=' fs-14 fw-400 lh-20'>
-                반입정화시설
+                XXXXXX
               </a>
             </div>
           </div>
@@ -79,12 +79,13 @@ const Section2 = () => {
           <div className='column'>
             <div className='column-image'>
               <a href='#a'>
-                <img src={imgPath.service01} alt='service 04' loading='lazy' />
+                <span className='material-icons'>shopping_cart_checkout</span>
+                {/* <img src={imgPath.service01} alt='service 04' loading='lazy' /> */}
               </a>
             </div>
             <div className='column-content'>
               <a href='#a' className=' fs-14 fw-400 lh-20'>
-                토양환경평가
+                XXXXXX
               </a>
             </div>
           </div>
@@ -93,12 +94,13 @@ const Section2 = () => {
           <div className='column'>
             <div className='column-image'>
               <a href='#a'>
-                <img src={imgPath.service03} alt='service 04' loading='lazy' />
+                <span className='material-icons'>rebase_edit</span>
+                {/* <img src={imgPath.service03} alt='service 04' loading='lazy' /> */}
               </a>
             </div>
             <div className='column-content'>
               <a href='#a' className=' fs-14 fw-400 lh-20'>
-                플라스틱시트파일
+                XXXXXXXX
               </a>
             </div>
           </div>
@@ -121,7 +123,7 @@ const Section3 = () => {
             </div>
             <div className='column-content'>
               <a href='#a' className='fs-24 fw-400 lh-24'>
-                오염토양 발견시
+                XXXX XXX
               </a>
             </div>
           </div>
@@ -135,7 +137,7 @@ const Section3 = () => {
             </div>
             <div className='column-content'>
               <a href='#a' className='fs-24 fw-400 lh-24'>
-                충주 반입정화시설
+                XX XXXXXX
               </a>
             </div>
           </div>
@@ -156,13 +158,21 @@ const Section4 = () => {
         <div className='section-4-container-column'>
           <div className='column'>
             <div className={classNames('video-box', play ? 'video-play' : '')}>
-              <iframe
+              {/* <iframe
                 className='fluid-width-video-wrapper'
                 id='fitvid0'
                 src={`https://www.youtube.com/embed/oFeahD-ZePE?${play ? 'autoplay=1&amp;' : ''}feature=oembed`}
                 allowfullscreen
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                 title='[K-Tech Green Solutions] Soil Purification Company ‘Beautiful Environmental Construction’'
+              /> */}
+              <iframe
+                className='fluid-width-video-wrapper'
+                id='fitvid0'
+                src={`https://www.youtube.com/embed/1R6RXES7Zkg?si=Fh3JcqGJCXR2Kev5&${play ? 'autoplay=1&amp;' : ''}feature=oembed`}
+                title='YouTube video player'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                allowfullscreen
               />
             </div>
             <div className={classNames('video-overlap', play ? 'video-overlap-hidden' : '')}>
@@ -176,24 +186,24 @@ const Section4 = () => {
           <div className='column column-news'>
             <div className='news-1'>
               <p className='fs-24 fw-700 lh-24' style={{ marginBottom: 20 }}>
-                BEC&nbsp;<span>새소식</span>
+                XXX&nbsp;<span>XXX</span>
               </p>
               <div className='news-description'>
                 <p className='fs-20 fw-600 lh-20' style={{ marginBottom: 10 }}>
-                  경기도 우수환경기업 지정
+                  XXX XXXXXX XX
                 </p>
-                <p className='fs-14 fw-400 lh-14'>[이뉴스투데이 강의석 기자] 경기도가 우수한 환경기술로 높은 성장잠재력을 지닌 도내 중소 환경기업</p>
+                <p className='fs-14 fw-400 lh-14'>[XXXXXX XXX XX] XXXX XXX XXXXX XX XXXXXX XX XX XX XXXX</p>
               </div>
             </div>
             <div className='news-2'>
               <p className='fs-24 fw-700 lh-24' style={{ marginBottom: 20 }}>
-                BEC&nbsp;<span>사업실적</span>
+                XXX&nbsp;<span>XXXX</span>
               </p>
               <div className='news-description'>
                 <p className='fs-20 fw-600 lh-20' style={{ marginBottom: 10 }}>
-                  Fuel Recovery at 5 Camp Bioslurping
+                  XXXXXXXXXXXXXXXXXXXXXXXXX
                 </p>
-                <p className='fs-14 fw-400 lh-14'>5개 Site 내 195개 관정 설치 5개 Site 내 처리장치 총 12 System 설치 및 운영</p>
+                <p className='fs-14 fw-400 lh-14'>XXXXXXXXX XXXXXX XXXXXXXXXXXXXX XXXXXXXXX XX</p>
               </div>
             </div>
           </div>
@@ -304,6 +314,9 @@ const main_wrap = css`
         text-align: center;
         direction: ltr;
         .column {
+          .column-image > a > span {
+            font-size: 62px;
+          }
           .column-content a {
             color: #333;
           }

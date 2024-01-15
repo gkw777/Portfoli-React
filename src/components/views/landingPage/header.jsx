@@ -33,12 +33,12 @@ export default HeaderComponent;
 
 const TopHeaderList = () => {
   const [header_items] = useState([
-    { title: '회사소개', item: ['CEO 인사', '회사소개', '연혁', '조직도', '보유먼허 및 인증', '오시는길'] },
-    { title: '토양·지하수/광해', item: ['토탈환경컨설팅', '조사 및 설계', '정화', '반입정화시설', '광해방지사업'] },
-    { title: '토목/산업환경', item: ['플라스틱시트파일(PSP)', '수처리', '철거 및 석면', '일반토목'] },
-    { title: '해외사업', item: ['주한미군사업(FED,CCK)', '해외원유오염정화(KOC,ERC)', '침수방지사업'] },
-    { title: '실적/연구개발', item: ['토양·지하수/광해', '토목/산업환경', '해외사업', '연구개발'] },
-    { title: '고객지원', item: ['공지사항', '홍보/보도자료', '문의하기'] }
+    { title: 'XXXX', item: ['XXX XX', 'XXXX', 'XX', 'XXX', 'XXXX X XX', 'XXXX'] },
+    { title: 'XX·XXX/XX', item: ['XXXXXXXX', 'XX XX XX', 'XX', 'XXXXXX', 'XXXXXX'] },
+    { title: 'XX/XXXX', item: ['XXXXXXXX', 'XXX', 'XX X XX', 'XXXX'] },
+    { title: 'XXXX', item: ['XXXXXX', 'XXXXXXXX', 'XXXXXX'] },
+    { title: 'XX/XXXX', item: ['XX·XXX/XX', 'XX/XXXX', 'XXXX', 'XXXX'] },
+    { title: 'XXXX', item: ['XXXX', 'XX/XXXX', 'XXXX'] }
   ]);
   return (
     <nav className='nav d-inline-flex align-items-center'>
