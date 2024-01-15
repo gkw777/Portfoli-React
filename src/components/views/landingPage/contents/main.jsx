@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 
 import { css } from '@emotion/react';
 
@@ -26,7 +26,7 @@ const MainComponent = () => {
   );
 };
 
-export default MainComponent;
+export default memo(MainComponent);
 
 const Section1 = () => {
   return (
@@ -114,8 +114,11 @@ const Section3 = () => {
   return (
     <div className='section-3'>
       <div className='section-3-container-row'>
-        <div className='section-3-container-column bg-column-1'>
-          <div className='column'>
+        <div className='section-3-container-column'>
+          <div className='bg-column-1'>
+            <div className='bg-column-hover' />
+          </div>
+          <div className='column column-line-1'>
             <div className='column-image'>
               <a href='#a' className='fs-24 fw-400 lh-24'>
                 <span className='material-icons'>add</span>
@@ -128,8 +131,11 @@ const Section3 = () => {
             </div>
           </div>
         </div>
-        <div className='section-3-container-column bg-column-2'>
-          <div className='column'>
+        <div className='section-3-container-column'>
+          <div className='bg-column-2'>
+            <div className='bg-column-hover' />
+          </div>
+          <div className='column column-line-2'>
             <div className='column-image'>
               <a href='#a' className='fs-24 fw-400 lh-24'>
                 <span className='material-icons'>add</span>
@@ -158,14 +164,6 @@ const Section4 = () => {
         <div className='section-4-container-column'>
           <div className='column'>
             <div className={classNames('video-box', play ? 'video-play' : '')}>
-              {/* <iframe
-                className='fluid-width-video-wrapper'
-                id='fitvid0'
-                src={`https://www.youtube.com/embed/oFeahD-ZePE?${play ? 'autoplay=1&amp;' : ''}feature=oembed`}
-                allowfullscreen
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                title='[K-Tech Green Solutions] Soil Purification Company ‘Beautiful Environmental Construction’'
-              /> */}
               <iframe
                 className='fluid-width-video-wrapper'
                 id='fitvid0'
@@ -364,21 +362,37 @@ const main_wrap = css`
     margin: auto;
     .section-3-container-row {
       display: flex;
-      .section-3-container-column.bg-column-1 {
+      .section-3-container-column > .bg-column-1 {
         background-position: center right;
-
         background-image: url('assets/imgs/bg_world_2.jpg');
       }
-      .section-3-container-column.bg-column-2 {
+      .section-3-container-column > .bg-column-2 {
         background-position: center left;
-
         background-image: url('assets/imgs/bg_world_3.jpg');
       }
       .section-3-container-column {
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: relative;
         width: 50%;
+        overflow: hidden;
+        .bg-column-1,
+        .bg-column-2 {
+          position: absolute;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          scale: 1;
+          transition: scale 0.4s ease-in-out;
+
+          .bg-column-hover {
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.4s ease-in-out;
+          }
+        }
         .column {
+          position: relative;
+          z-index: 1;
           .column-image {
             margin-bottom: 14px;
             a {
@@ -390,18 +404,24 @@ const main_wrap = css`
             text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
           }
           padding: 12px 20px 42px 26px;
-          margin-top: 174px !important;
+          margin-top: 174px;
+        }
+
+        &:hover {
+          .bg-column-1,
+          .bg-column-2 {
+            scale: 1.1;
+            .bg-column-hover {
+              background: rgba(0, 0, 0, 0.2);
+            }
+          }
         }
       }
-      .section-3-container-column:not(.bg-column-2) {
-        .column {
-          background-color: rgba(114, 170, 53, 0.86);
-        }
+      .section-3-container-column > .column.column-line-1 {
+        background-color: rgba(114, 170, 53, 0.86);
       }
-      .section-3-container-column:not(.bg-column-1) {
-        .column {
-          background-color: rgba(139, 114, 74, 0.86);
-        }
+      .section-3-container-column > .column.column-line-2 {
+        background-color: rgba(139, 114, 74, 0.86);
       }
     }
     @media (max-width: 980px) {
@@ -470,7 +490,7 @@ const main_wrap = css`
               }
 
               :hover {
-                background: rgba(0, 0, 0, 0.6);
+                background: rgba(0, 0, 0, 0.2);
               }
             }
           }
@@ -495,6 +515,7 @@ const main_wrap = css`
             }
             .news-description {
               padding: 0 8%;
+              word-wrap: break-word;
             }
           }
           .news-2 {

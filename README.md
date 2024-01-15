@@ -8,11 +8,12 @@
 ver 1.0.0
 ```
 
-```.dotenv
+## Work Flow
+
 1. 웹팩 셋팅
 2. eslint 및 prettier 셋팅
-3. landing 페이지 작업
+3. 랜딩 페이지 ( 반응형 )
+
 - header
 - main & section
 - footer
-```

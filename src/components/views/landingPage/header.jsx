@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { memo, useState } from 'react';
 
 import { css } from '@emotion/react';
 
@@ -28,8 +28,7 @@ const HeaderComponent = () => {
   );
 };
 
-// 1010-0015-7631-8230
-export default HeaderComponent;
+export default memo(HeaderComponent);
 
 const TopHeaderList = () => {
   const [header_items] = useState([
