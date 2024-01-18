@@ -42,7 +42,7 @@ const TopHeaderList = () => {
   return (
     <nav className='nav d-inline-flex align-items-center'>
       <>
-        <ul className='top-menu li-style-none d-inline-flex flex-wrap'>
+        <ul className='top-menu li-style-none'>
           {header_items.map((item, key) => (
             <li className='top-item' key={key} aria-label={item.title}>
               <a href='#a' className='fs-14 fw-700 lh-14 d-inline-flex align-items-center'>
@@ -95,6 +95,7 @@ const header_wrap = css`
     margin-left: auto;
     .top-menu {
       & > .top-item {
+        display: inline-block;
         padding-right: 1.375rem;
         &:last-of-type {
           padding: 0;

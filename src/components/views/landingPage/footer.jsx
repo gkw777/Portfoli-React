@@ -58,7 +58,6 @@ const FooterBottom = () => {
 const footer_wrap = css`
   background-color: #322e43;
   .footer-nav {
-    background-color: #322e43;
     .footer-nav-container {
       max-width: 1280px;
       margin: 0 auto;

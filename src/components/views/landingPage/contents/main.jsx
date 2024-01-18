@@ -170,7 +170,7 @@ const Section4 = () => {
                 src={`https://www.youtube.com/embed/1R6RXES7Zkg?si=Fh3JcqGJCXR2Kev5&${play ? 'autoplay=1&amp;' : ''}feature=oembed`}
                 title='YouTube video player'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
+                allowFullScreen
               />
             </div>
             <div className={classNames('video-overlap', play ? 'video-overlap-hidden' : '')}>
@@ -335,9 +335,10 @@ const main_wrap = css`
       .section-2-container-row {
         .section-2-container-column {
           width: 100% !important;
-          :nth-child(2) > .column,
-          :nth-child(4) > .column {
+          :nth-of-type(2) > .column,
+          :nth-of-type(4) > .column {
             margin-left: 0;
+            margin-top: 2px;
           }
         }
       }
@@ -348,9 +349,13 @@ const main_wrap = css`
         flex-wrap: wrap;
         .section-2-container-column {
           width: 50%;
-          :nth-child(1) > .column,
-          :nth-child(3) > .column {
+          :nth-of-type(1) > .column,
+          :nth-of-type(3) > .column {
             margin-left: 0;
+          }
+          :nth-of-type(3) > .column,
+          :nth-of-type(4) > .column {
+            margin-top: 2px;
           }
         }
       }
