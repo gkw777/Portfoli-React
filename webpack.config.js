@@ -61,17 +61,6 @@ const config = {
       }
     ]
   },
-  // optimization: {
-  //   splitChunks: {
-  //     cacheGroups: {
-  //       commons: {
-  //         test: /[\\/]node_modules[\\/]/,
-  //         name: 'chunk',
-  //         chunks: 'all'
-  //       }
-  //     }
-  //   }
-  // },
   plugins: [
     new Dotenv({ path: envPath }),
     new InterpolateHtmlPlugin({ PUBLIC_URL: '' }),
@@ -116,16 +105,17 @@ const config = {
   }
 };
 
-if (isDev && config.plugins) {
-  config.plugins.push(new webpack.HotModuleReplacementPlugin());
-  config.plugins.push(new ReactRefreshWebpackPlugin());
+if (config.plugins) {
+  if (isDev) {
+    config.plugins.push(new webpack.HotModuleReplacementPlugin());
+    config.plugins.push(new ReactRefreshWebpackPlugin());
+  } else {
+    config.plugins.push(
+      new CopyWebpackPlugin({
+        patterns: [{ from: 'src/assets/imgs', to: 'assets/imgs' }, { from: 'public/favicon.ico' }]
+      })
+    );
+  }
 }
-// else if (config.plugins) {
-//   config.plugins.push(
-//     new CopyWebpackPlugin({
-//       patterns: [{ from: 'src/assets/imgs', to: 'assets/imgs' }, { from: 'public/favicon.ico' }]
-//     })
-//   );
-// }
 
 module.exports = config;

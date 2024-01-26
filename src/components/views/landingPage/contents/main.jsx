@@ -33,7 +33,7 @@ const Section1 = () => {
     <div className='section-1 position-relative'>
       <div className='slide-container'>
         <div className='slide-container-inner'>
-          <h1 className='slide-title fs-24 fw-900 lh-24'>푸른 물, 맑은 공기, 깨끗한 바다</h1>
+          <h1 className='slide-title fs-24 fw-900 lh-28'>푸른 물, 맑은 공기, 깨끗한 바다</h1>
           <p className='slide-content fs-18 fw-400 lh-18'>세계로 나아가는 깨끗한 바다</p>
         </div>
       </div>
@@ -259,15 +259,6 @@ const main_wrap = css`
             border-bottom-width: 7px;
             border-bottom-style: solid;
             border-color: #73a91f;
-
-            @media (max-width: 766px) {
-              top: -5px;
-              left: -20px;
-              width: 10px;
-              height: 60px;
-              border-left-width: 5px;
-              border-bottom-width: 5px;
-            }
           }
           &::after {
             position: absolute;
@@ -281,7 +272,24 @@ const main_wrap = css`
             border-top-width: 7px;
             border-top-style: solid;
             border-color: #73a91f;
-            @media (max-width: 766px) {
+          }
+        }
+        .slide-content {
+          color: #fff;
+        }
+        @media (max-width: 766px) {
+          .slide-title {
+            margin-bottom: 0px;
+            padding-bottom: 8px;
+            &::before {
+              top: -5px;
+              left: -20px;
+              width: 10px;
+              height: 60px;
+              border-left-width: 5px;
+              border-bottom-width: 5px;
+            }
+            &::after {
               top: -5px;
               left: -20px;
               width: 55px;
@@ -290,10 +298,7 @@ const main_wrap = css`
               border-top-width: 5px;
             }
           }
-        }
-        .slide-content {
-          color: #fff;
-          @media (max-width: 766px) {
+          .slide-content {
             font-size: 14px;
           }
         }

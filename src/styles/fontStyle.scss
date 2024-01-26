@@ -54,6 +54,9 @@
 .lh-32 {
   @include kg-lh(2rem);
 }
+.lh-28 {
+  @include kg-lh(1.75rem);
+}
 .lh-24 {
   @include kg-lh(1.5rem);
 }
