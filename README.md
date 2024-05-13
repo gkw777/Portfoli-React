@@ -14,7 +14,7 @@ ver 1.0.0
 ### 테블릿 화면
 ![테블릿_화면](https://github.com/gkw777/Portfolio-React/assets/62530852/9cae0abc-1e34-4a3b-958b-69215b6532da)
 ### 모바일 화면
-![모바일_화면](https://github.com/gkw777/Portfolio-React/assets/62530852/6f293afc-8748-4fac-86d7-054851c88083)
+![모바일_화면](https://github.com/gkw777/Portfolio-React/assets/62530852/43e018f4-0e3f-4379-93f0-69f6742f3e09)
 
 ## Work Flow
 
