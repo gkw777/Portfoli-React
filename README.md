@@ -9,7 +9,12 @@ ver 1.0.0
 ```
 
 ## Screen View
-![화면 캡처 2024-05-13 162940](https://github.com/gkw777/Portfolio-React/assets/62530852/d77aa8a1-2f45-436f-b11b-dc4ff4d41773)
+### 데스크탑 화면
+![데스크톱_화면](https://github.com/gkw777/Portfolio-React/assets/62530852/db7b9991-4d6c-44d8-a7f6-33edb45e5056)
+### 테블릿 화면
+![테블릿_화면](https://github.com/gkw777/Portfolio-React/assets/62530852/9cae0abc-1e34-4a3b-958b-69215b6532da)
+### 모바일 화면
+![모바일_화면](https://github.com/gkw777/Portfolio-React/assets/62530852/6f293afc-8748-4fac-86d7-054851c88083)
 
 ## Work Flow
 
