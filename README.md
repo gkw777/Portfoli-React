@@ -7,8 +7,6 @@
 ```.dotenv
 ver 1.0.0
 ```
-![Uploading image.png…]()
-
 ## Work Flow
 
 1. 웹팩 셋팅
