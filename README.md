@@ -7,6 +7,10 @@
 ```.dotenv
 ver 1.0.0
 ```
+
+## Screen View
+![화면 캡처 2024-05-13 162940](https://github.com/gkw777/Portfolio-React/assets/62530852/d77aa8a1-2f45-436f-b11b-dc4ff4d41773)
+
 ## Work Flow
 
 1. 웹팩 셋팅
