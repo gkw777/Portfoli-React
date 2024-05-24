@@ -8,7 +8,7 @@ const dotenv = require('dotenv');
 const Dotenv = require('dotenv-webpack');
 const ESLintPlugin = require('eslint-webpack-plugin'); // eslint 사용할 경우
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const InterpolateHtmlPlugin = require('interpolate-html-plugin');
+const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 
@@ -63,7 +63,7 @@ const config = {
   },
   plugins: [
     new Dotenv({ path: envPath }),
-    // new InterpolateHtmlPlugin({ PUBLIC_URL: '' }),
+    new InterpolateHtmlPlugin({ PUBLIC_URL: '' }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
