@@ -84,7 +84,7 @@ const config = {
   ],
   output: {
     filename: '[name].bundle.[contenthash:8].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     assetModuleFilename: (pathData) => {
       const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
       return `${filepath}/[name].[contenthash:8][ext]`;
