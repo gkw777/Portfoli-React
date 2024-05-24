@@ -1,4 +1,5 @@
-import { memo } from 'react';
+import { memo, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { css } from '@emotion/react';
 
@@ -18,22 +19,26 @@ const FooterComponent = () => {
 export default memo(FooterComponent);
 
 const FooterNav = () => {
+  const navigate = useNavigate();
+  const clickHome = useCallback(() => {
+    navigate('/');
+  }, [navigate]);
   return (
     <div className='footer-nav'>
       <div className='footer-nav-container'>
         <ul className='footer-nav li-style-none'>
           <li>
-            <a href='/' className='fs-14 fw-500 lh-14'>
+            <a href=' ' className='fs-14 fw-500 lh-14'>
               XXX
             </a>
           </li>
           <li>
-            <a href='/' className='fs-14 fw-500 lh-14'>
+            <a href=' ' className='fs-14 fw-500 lh-14'>
               XXXX
             </a>
           </li>
           <li>
-            <a href='/' className='fs-14 fw-500 lh-14'>
+            <a href=' ' className='fs-14 fw-500 lh-14'>
               XXXX
             </a>
           </li>

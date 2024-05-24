@@ -48,13 +48,13 @@ const Section2 = () => {
         <div className='section-2-container-column'>
           <div className='column'>
             <div className='column-image'>
-              <a href='/'>
+              <a href={process.env.PUBLIC_URL}>
                 <span className='material-icons'>swipe_vertical</span>
                 {/* <img src={imgPath.service01} alt='service 04' loading='lazy' /> */}
               </a>
             </div>
             <div className='column-content'>
-              <a href='/' className=' fs-14 fw-400 lh-20'>
+              <a href={process.env.PUBLIC_URL} className=' fs-14 fw-400 lh-20'>
                 XX/XXX
               </a>
             </div>
@@ -63,13 +63,13 @@ const Section2 = () => {
         <div className='section-2-container-column'>
           <div className='column'>
             <div className='column-image'>
-              <a href='/'>
+              <a href={process.env.PUBLIC_URL}>
                 <span className='material-icons'>bolt</span>
                 {/* <img src={imgPath.service02} alt='service 04' loading='lazy' /> */}
               </a>
             </div>
             <div className='column-content'>
-              <a href='/' className=' fs-14 fw-400 lh-20'>
+              <a href={process.env.PUBLIC_URL} className=' fs-14 fw-400 lh-20'>
                 XXXXXX
               </a>
             </div>
@@ -78,13 +78,13 @@ const Section2 = () => {
         <div className='section-2-container-column'>
           <div className='column'>
             <div className='column-image'>
-              <a href='/'>
+              <a href={process.env.PUBLIC_URL}>
                 <span className='material-icons'>shopping_cart_checkout</span>
                 {/* <img src={imgPath.service01} alt='service 04' loading='lazy' /> */}
               </a>
             </div>
             <div className='column-content'>
-              <a href='/' className=' fs-14 fw-400 lh-20'>
+              <a href={process.env.PUBLIC_URL} className=' fs-14 fw-400 lh-20'>
                 XXXXXX
               </a>
             </div>
@@ -93,13 +93,13 @@ const Section2 = () => {
         <div className='section-2-container-column'>
           <div className='column'>
             <div className='column-image'>
-              <a href='/'>
+              <a href={process.env.PUBLIC_URL}>
                 <span className='material-icons'>rebase_edit</span>
                 {/* <img src={imgPath.service03} alt='service 04' loading='lazy' /> */}
               </a>
             </div>
             <div className='column-content'>
-              <a href='/' className=' fs-14 fw-400 lh-20'>
+              <a href={process.env.PUBLIC_URL} className=' fs-14 fw-400 lh-20'>
                 XXXXXXXX
               </a>
             </div>
@@ -120,12 +120,12 @@ const Section3 = () => {
           </div>
           <div className='column column-line-1'>
             <div className='column-image'>
-              <a href='/' className='fs-24 fw-400 lh-24'>
+              <a href={process.env.PUBLIC_URL} className='fs-24 fw-400 lh-24'>
                 <span className='material-icons'>add</span>
               </a>
             </div>
             <div className='column-content'>
-              <a href='/' className='fs-24 fw-400 lh-24'>
+              <a href={process.env.PUBLIC_URL} className='fs-24 fw-400 lh-24'>
                 XXXX XXX
               </a>
             </div>
@@ -137,12 +137,12 @@ const Section3 = () => {
           </div>
           <div className='column column-line-2'>
             <div className='column-image'>
-              <a href='/' className='fs-24 fw-400 lh-24'>
+              <a href={process.env.PUBLIC_URL} className='fs-24 fw-400 lh-24'>
                 <span className='material-icons'>add</span>
               </a>
             </div>
             <div className='column-content'>
-              <a href='/' className='fs-24 fw-400 lh-24'>
+              <a href={process.env.PUBLIC_URL} className='fs-24 fw-400 lh-24'>
                 XX XXXXXX
               </a>
             </div>

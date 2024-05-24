@@ -11,7 +11,7 @@ const HeaderComponent = () => {
     <Header style={{ marginBottom: '1rem' }}>
       <div css={header_wrap}>
         <div className='w-100 d-inline-flex align-items-center'>
-          <a href='/' className='banner-log'>
+          <a href={process.env.PUBLIC_URL} className='banner-log'>
             <img
               src={imgPath.banner_title_logo}
               alt='banner logo'
@@ -45,14 +45,14 @@ const TopHeaderList = () => {
         <ul className='top-menu li-style-none'>
           {header_items.map((item, key) => (
             <li className='top-item' key={key} aria-label={item.title}>
-              <a href='/' className='fs-14 fw-700 lh-14 d-inline-flex align-items-center'>
+              <a href={process.env.PUBLIC_URL} className='fs-14 fw-700 lh-14 d-inline-flex align-items-center'>
                 {item.title}
                 <i className='material-icons'>expand_more</i>
               </a>
               <ul className='sub-menu li-style-none'>
                 {item.item.map((item, key) => (
                   <li className='sub-item' key={key} aria-label={item}>
-                    <a href='/' className='fs-14 fw-500 lh-14 d-inline-flex align-items-center'>
+                    <a href={process.env.PUBLIC_URL} className='fs-14 fw-500 lh-14 d-inline-flex align-items-center'>
                       {item}
                     </a>
                   </li>
@@ -62,7 +62,7 @@ const TopHeaderList = () => {
           ))}
         </ul>
         <div className='d-inline-flex align-items-center'>
-          <a href='/' className='header-menu-icon'>
+          <a href={process.env.PUBLIC_URL} className='header-menu-icon'>
             <i className='material-icons'>menu</i>
           </a>
         </div>
