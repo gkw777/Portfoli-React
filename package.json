@@ -1,9 +1,9 @@
 {
-  "name": "portfolio-react",
+  "name": "portfolio-react-01",
   "version": "1.0.0",
   "license": "ISC",
   "private": true,
-  "homepage": "https://gkw777.github.io/Portfolio-React",
+  "homepage": "https://gkw777.github.io/portfolio-react-01",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env webpack serve --env development",
