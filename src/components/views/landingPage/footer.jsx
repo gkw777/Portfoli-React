@@ -23,17 +23,17 @@ const FooterNav = () => {
       <div className='footer-nav-container'>
         <ul className='footer-nav li-style-none'>
           <li>
-            <a href='#a' className='fs-14 fw-500 lh-14'>
+            <a href='/' className='fs-14 fw-500 lh-14'>
               XXX
             </a>
           </li>
           <li>
-            <a href='#a' className='fs-14 fw-500 lh-14'>
+            <a href='/' className='fs-14 fw-500 lh-14'>
               XXXX
             </a>
           </li>
           <li>
-            <a href='#a' className='fs-14 fw-500 lh-14'>
+            <a href='/' className='fs-14 fw-500 lh-14'>
               XXXX
             </a>
           </li>
