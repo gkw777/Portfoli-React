@@ -22,7 +22,7 @@ dotenv.config({
 const config = {
   name: 'portfolio-react-webpack', // 설정 이름
   mode: isDev ? 'development' : 'production', // production, development // 설정 모드
-  devtool: isDev ? 'eval-cheap-source-map' : 'none',
+  devtool: isDev ? 'eval-cheap-source-map' : false,
   entry: {
     app: path.resolve(__dirname, 'src/index.js')
   },
