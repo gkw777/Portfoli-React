@@ -22,7 +22,7 @@ dotenv.config({
 const config = {
   name: 'portfolio-react-webpack', // 설정 이름
   mode: isDev ? 'development' : 'production', // production, development // 설정 모드
-  devtool: isDev ? 'inline-source-map' : false,
+  devtool: isDev ? 'eval-cheap-source-map' : 'none',
   entry: {
     app: path.resolve(__dirname, 'src/index.js')
   },
@@ -72,9 +72,6 @@ const config = {
     }),
     new webpack.ProvidePlugin({
       React: 'react' // 리액트 자동 로드
-    }),
-    new CopyWebpackPlugin({
-      patterns: [{ from: 'src/assets/imgs', to: 'assets/imgs' }, { from: 'public/favicon.ico' }]
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
