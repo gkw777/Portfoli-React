@@ -12,14 +12,7 @@ const HeaderComponent = () => {
       <div css={header_wrap}>
         <div className='w-100 d-inline-flex align-items-center'>
           <a href=' ' className='banner-log'>
-            <img
-              src={imgPath.banner_title_logo}
-              alt='banner logo'
-              loading='lazy'
-              data-height-percentage='42'
-              data-actual-width='133'
-              data-actual-height='23'
-            />
+            <img src={imgPath.logo} alt='logo' loading='lazy' width={250} />
           </a>
           <TopHeaderList />
         </div>

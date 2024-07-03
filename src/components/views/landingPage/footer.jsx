@@ -29,17 +29,17 @@ const FooterNav = () => {
         <ul className='footer-nav li-style-none'>
           <li>
             <a href=' ' className='fs-14 fw-500 lh-14'>
-              XXX
+              회사소개
             </a>
           </li>
           <li>
             <a href=' ' className='fs-14 fw-500 lh-14'>
-              XXXX
+              문의하기
             </a>
           </li>
           <li>
             <a href=' ' className='fs-14 fw-500 lh-14'>
-              XXXX
+              오시는길
             </a>
           </li>
         </ul>
@@ -52,9 +52,7 @@ const FooterBottom = () => {
   return (
     <div className='footer-bottom'>
       <div className='footer-bottom-container'>
-        <p className='fs-12 fw-400 lh-14'>XXXXXXXXXXXXXX XXXXXXXXXXXXXXXX</p>
-        <p className='fs-12 fw-400 lh-14'>XXXXXX XXXXXXXXXXXXXXX XXXXXXXXX</p>
-        <p className='fs-12 fw-400 lh-14'>XXXXXXXXXXX XXXXXXXXXXXXXXXXXXX</p>
+        <p className='fs-12 fw-400 lh-14'>@2023 github.com/gkw777 All rights reserved</p>
       </div>
     </div>
   );

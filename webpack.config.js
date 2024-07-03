@@ -77,7 +77,10 @@ const config = {
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[id].[contenthash:8].css'
     }),
-    new ESLintPlugin()
+    new ESLintPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'src/assets/imgs', to: 'assets/imgs' }, { from: 'public/favicon.ico' }]
+    })
   ],
   output: {
     filename: '[name].bundle.[contenthash:8].js',
@@ -106,12 +109,6 @@ if (config.plugins) {
   if (isDev) {
     config.plugins.push(new webpack.HotModuleReplacementPlugin());
     config.plugins.push(new ReactRefreshWebpackPlugin());
-  } else {
-    config.plugins.push(
-      new CopyWebpackPlugin({
-        patterns: [{ from: 'src/assets/imgs', to: 'assets/imgs' }, { from: 'public/favicon.ico' }]
-      })
-    );
   }
 }
 

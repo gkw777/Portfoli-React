@@ -55,7 +55,7 @@ const Section2 = () => {
             </div>
             <div className='column-content'>
               <a href=' ' className=' fs-14 fw-400 lh-20'>
-                XX/XXX
+                파도
               </a>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Section2 = () => {
             </div>
             <div className='column-content'>
               <a href=' ' className=' fs-14 fw-400 lh-20'>
-                XXXXXX
+                섬
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Section2 = () => {
             </div>
             <div className='column-content'>
               <a href=' ' className=' fs-14 fw-400 lh-20'>
-                XXXXXX
+                바다
               </a>
             </div>
           </div>
@@ -100,7 +100,7 @@ const Section2 = () => {
             </div>
             <div className='column-content'>
               <a href=' ' className=' fs-14 fw-400 lh-20'>
-                XXXXXXXX
+                노을
               </a>
             </div>
           </div>
@@ -126,7 +126,7 @@ const Section3 = () => {
             </div>
             <div className='column-content'>
               <a href=' ' className='fs-24 fw-400 lh-24'>
-                XXXX XXX
+                석양빛 파도
               </a>
             </div>
           </div>
@@ -143,7 +143,7 @@ const Section3 = () => {
             </div>
             <div className='column-content'>
               <a href=' ' className='fs-24 fw-400 lh-24'>
-                XX XXXXXX
+                석양의 바다
               </a>
             </div>
           </div>
@@ -184,24 +184,24 @@ const Section4 = () => {
           <div className='column column-news'>
             <div className='news-1'>
               <p className='fs-24 fw-700 lh-24' style={{ marginBottom: 20 }}>
-                XXX&nbsp;<span>XXX</span>
+                해넘이&nbsp;<span>바다</span>
               </p>
               <div className='news-description'>
                 <p className='fs-20 fw-600 lh-20' style={{ marginBottom: 10 }}>
-                  XXX XXXXXX XX
+                  구름 사이로 피어나는 석양빛
                 </p>
-                <p className='fs-14 fw-400 lh-14'>[XXXXXX XXX XX] XXXX XXX XXXXX XX XXXXXX XX XX XX XXXX</p>
+                {/* <p className='fs-14 fw-400 lh-14'>[XXXXXX XXX XX] XXXX XXX XXXXX XX XXXXXX XX XX XX XXXX</p> */}
               </div>
             </div>
             <div className='news-2'>
               <p className='fs-24 fw-700 lh-24' style={{ marginBottom: 20 }}>
-                XXX&nbsp;<span>XXXX</span>
+                해넘이&nbsp;<span>바다</span>
               </p>
               <div className='news-description'>
                 <p className='fs-20 fw-600 lh-20' style={{ marginBottom: 10 }}>
-                  XXXXXXXXXXXXXXXXXXXXXXXXX
+                  구름 사이로 피어나는 석양빛
                 </p>
-                <p className='fs-14 fw-400 lh-14'>XXXXXXXXX XXXXXX XXXXXXXXXXXXXX XXXXXXXXX XX</p>
+                {/* <p className='fs-14 fw-400 lh-14'>XXXXXXXXX XXXXXX XXXXXXXXXXXXXX XXXXXXXXX XX</p> */}
               </div>
             </div>
           </div>
